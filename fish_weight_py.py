@@ -9,7 +9,7 @@ import numpy as np
 import pickle as pk
 import streamlit as st
 
-loaded_model=pk.load(open('C:\weight fish predict/trained_model.sav','rb'))
+loaded_model=pk.load(open('trained_model.sav','rb'))
 
 def fish_pred(input_data):
     input_data_array=np.asarray(input_data)
@@ -26,7 +26,7 @@ def main():
     length3=st.number_input('Enter length3 Of Fish')
     st.write('Fish Species Encode Values As Species_Encode In DataFrame')
     from PIL import Image
-    img=Image.open('C:\weight fish predict/species encode.png')
+    img=Image.open('species encode.png')
     st.image(img)
     species_encode=st.radio('Choose Species_Encode Value Of Fish Species From Above DataFrame',[0,1,2,3,4,5,6])
     fish_predict=' '
