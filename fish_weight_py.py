@@ -26,7 +26,7 @@ def main():
     length3=st.number_input('Enter length3 Of Fish')
     st.write('Fish Species Encode Values As Species_Encode In DataFrame')
     from PIL import Image
-    img=Image.open('species encode.png')
+    img=Image.open('species encode.PNG')
     st.image(img)
     species_encode=st.radio('Choose Species_Encode Value Of Fish Species From Above DataFrame',[0,1,2,3,4,5,6])
     fish_predict=' '
